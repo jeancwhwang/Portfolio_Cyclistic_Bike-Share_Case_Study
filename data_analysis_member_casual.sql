@@ -97,7 +97,8 @@ FROM member_casual_dow
 GROUP BY 1,2,3
 ORDER BY 4 DESC;
 
-/*Appendix - Total Users*/
+/*Appendix/*  
+/*Total Users*/
 
 SELECT  member_casual,
 	count(*),
@@ -105,7 +106,7 @@ SELECT  member_casual,
 FROM cyclistic
 GROUP BY 1;
 
-/*Rideable_Type - Total Respondents*/ 
+/*Rideable_Type - Total Users*/ 
 
 SELECT  rideable_type,
 	count(*),
@@ -114,7 +115,7 @@ FROM cyclistic
 GROUP BY 1
 ORDER BY 3 DESC;
 
-/* Ride Length Stats - Total Respondents*/
+/* Ride Length Stats - Total Users*/
 
 SELECT
 	AVG(seconds_diff) as AVG_ride_length_seconds,
@@ -122,7 +123,7 @@ SELECT
 	MIN(seconds_diff) as MIN_ride_length_seconds
 FROM ride_length;
 
-/* TOP 5 popular start_coordinates - Total Respondents*/
+/* TOP 5 popular start_coordinates - Total Users*/
 
 SELECT
 	start_coordinates,
@@ -132,7 +133,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 5;
 
-/* TOP 5 popular End_coordinates - Total Respondents*/
+/* TOP 5 popular End_coordinates - Total Users*/
 
 SELECT
 	end_coordinates,
@@ -142,7 +143,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 5;
 
-/* Mode of start day_of_week - Total Respondents*/
+/* Mode of start day_of_week - Total Users*/
 
 SELECT
 	started_at_dow,
