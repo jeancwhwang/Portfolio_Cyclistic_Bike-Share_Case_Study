@@ -1,4 +1,4 @@
-/*Rider_Types - Member vs. Casual*/
+/*Member vs. Casual*/
 
 SELECT  rideable_type,
 	member_casual,
