@@ -33,7 +33,7 @@ Tabular data includes:
 + start_station_name: The name of the start station. 
 + start_station_id: The ID of the start station to start can be (1) all numbers, (2) a combination of letters and numbers, or (3) a combination of all numbers, letters, and a special character. 
 + end_station_name: The name of the end station.
-+ end_station_id: The ID of the end station can be (1.) all numbers, (2.) a combination of letters and numbers, or (3.) a combination of all numbers, letters, and a special character. 
++ end_station_id: The ID of the end station can be (1) all numbers, (2) a combination of letters and numbers, or (3) a combination of all numbers, letters, and a special character. 
 + start_lat: Latitude of the start station. 
 + start_lng: Longitude of the start station. 
 + end_lat: Latitude of the end station. 
