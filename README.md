@@ -47,7 +47,7 @@ This dataset is already very well formatted. There is no duplicate data or irrel
 ## Findings
 
 + In June 2022, 47% of Cyclistic users are casual riders and 52% of users are annual members. 
-+ Not surprisingly, the average ride length of casual riders is much longer than annual members (32.09 min vs.13.99 min).   
++ Not surprisingly, the average ride length of casual riders is much longer than annual members (32 min vs.14 min).   
 + More than half of Cyclistic users (53%) choose to ride classic bikes, and 43% of Cyclistic users ride electric bikes. 
 + However, annual members are more likely to ride classic bikes than casual riders (31% vs. 22%). About 1 in 5 in both groups ride electric bikes. Additionally, docked bikes are the least favorable bike in both groups. Only 4% of casual riders ride docked bikes and none of the annual members ride docked bikes this month.
 + Casual riders love using Cyclistic on weekends, but not for annual members (Sunday: 18% vs.12%, Saturday: 18% vs. 12%). 
