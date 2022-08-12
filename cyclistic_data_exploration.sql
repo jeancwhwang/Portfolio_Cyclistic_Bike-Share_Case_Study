@@ -1,4 +1,4 @@
--- Create table Schema to import data in SQLite
+/*Create table Schema to import data in SQLite*/
 
 CREATE TABLE "cyclistic" (
 	"ride_id"	TEXT,
@@ -16,7 +16,8 @@ CREATE TABLE "cyclistic" (
 	"member_casual"	TEXT
 );
 
--- Total counts = 769204
+/*Descriptive Stats*/
+-- Total counts = 769204 
 
 SELECT COUNT(*)
 FROM cyclistic;
@@ -59,14 +60,14 @@ FROM cyclistic
 WHERE julianday(ended_at)-julianday(started_at) < 0;
 
 
--- Flip started_at & ended_at and update table
+/*Flip started_at & ended_at and update table*/
 
 UPDATE cyclistic
 SET	started_at = replace(started_at,started_at,ended_at),
 	ended_at = replace(ended_at,ended_at,started_at)
 WHERE started_at > ended_at;
 
--- FLAG: 54 people have the same started_at and ended_at. Might need to delete from the dataset
+/*FLAG: 54 people have the same started_at and ended_at. Might need to delete from the dataset*/
 
 SELECT  distinct member_casual,
         COUNT(julianday(ended_at)-julianday(started_at)) as julianday_diff
@@ -85,7 +86,7 @@ FROM cyclistic
 GROUP BY 1
 ORDER BY 4 DESC;
 
--- Create View Ride_Time for future analysis for ride length
+/*Create View Ride_Time for future analysis for ride length*/
 
 CREATE VIEW Ride_Length
 AS
@@ -128,7 +129,7 @@ FROM cyclistic
 GROUP BY 1
 ORDER BY 2 DESC;
 
--- Create View for Coordinates
+/*Create View for Coordinates*/
 
 CREATE VIEW Coordinates
 AS
