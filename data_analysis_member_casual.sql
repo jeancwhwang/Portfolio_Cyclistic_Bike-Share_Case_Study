@@ -10,14 +10,12 @@ ORDER BY 4 DESC;
 
 /* Ride Length Stats (AVG) -  Member vs. Casual*/
 
-
 SELECT  member_casual,
 	AVG(Cast((JulianDay(ended_at) - JulianDay(started_at))*24*60*60 as INTEGER)) as seconds_diff
 FROM cyclistic
 GROUP BY 1;
 
 /* Ride Length Stats MAX OR MIN  -  Member vs. Casual*/
-
 
 SELECT  member_casual,
 	MAX(Cast((JulianDay(ended_at) - JulianDay(started_at))*24*60*60 as INTEGER)) as MAX_seconds_diff,
@@ -135,8 +133,7 @@ LIMIT 5;
 
 /* TOP 5 popular End_coordinates - Total Users*/
 
-SELECT
-	end_coordinates,
+SELECT	end_coordinates,
 	count(*)
 FROM Coordinates
 GROUP BY 1
@@ -145,8 +142,7 @@ LIMIT 5;
 
 /* Mode of start day_of_week - Total Users*/
 
-SELECT
-	started_at_dow,
+SELECT	started_at_dow,
 	started_dow_text,
 	COUNT(*)
 FROM ride_length
