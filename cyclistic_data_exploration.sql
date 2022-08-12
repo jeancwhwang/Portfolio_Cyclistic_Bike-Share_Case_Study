@@ -76,7 +76,7 @@ WHERE julianday(ended_at)-julianday(started_at) = 0
 GROUP BY 1;
 
 -- rideable_type: no nulls, 3 variables
--- Get percentages of each rideable_type
+-- Get percentage of each rideable_type
 
 SELECT	 DISTINCT rideable_type,
 	 count(*),
