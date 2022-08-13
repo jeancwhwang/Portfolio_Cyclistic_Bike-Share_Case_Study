@@ -1,5 +1,11 @@
 # Portfolio: Cyclistic Bike-Share Case Study
-This is the final project for the Google Data Analytics Certificate. To view the Tableau dashboard, please see [Cyclistic Bike-Share Snapshot](https://public.tableau.com/app/profile/jean.hwang/viz/CyclisticBike-ShareCaseSnapshot/Cyclistic)
+To view the Tableau dashboard, please see [Cyclistic Bike-Share Snapshot](https://public.tableau.com/app/profile/jean.hwang/viz/CyclisticBike-ShareCaseSnapshot/Cyclistic)
+
+## Key Takeaways
+
++ A bike-share company Cyclistic wants to understand how annual members and casual riders use Cyclistic bikes differently so that the marketing team can design marketing strategies to convert casual riders into annual members.
++ The results show that casual riders use Cyclistic for leisure purposes, whereas annual members are for commuting purposes. Casual riders tend to use Cyclistic more on weekends and ride bikes along with the Illinois Coast of Lake Michigan. However, annual members tend to use Cyclistic on weekdays and ride bikes across downtown Chicago. 
++ Even though annual members have a shorter ride length (14 min) than casual members (32 min), they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%). Therefore, the marketing team should design marketing strategies to attract casual riders to use Cyclistic on weekdays.
 
 ## Background
 
