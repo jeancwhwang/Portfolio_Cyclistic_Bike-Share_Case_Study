@@ -58,13 +58,13 @@ This dataset is already very well formatted. There is no duplicate data or irrel
 ## Summary 
 
 + In general, casual riders and annual members use Cyclistic for different purposes – the former is for leisure purposes and the latter is for commuting purposes. 
-+ Specifically, casual riders tend to love riding bikes on weekends along with the Illinois Coast of Lake Michigan, and the average riding length is 2x more than annual members (32.09 min vs. 13.99 min). Even though casual riders are open to any type of bike, the docked bike is the least favorable type for them.  
++ Specifically, casual riders tend to love riding bikes on weekends along with the Illinois Coast of Lake Michigan, and the average riding length is 2x more than annual members (32 min vs. 14 min). Even though casual riders are open to any type of bike, the docked bike is the least favorable type for them.  
 + Compared to casual riders, annual members tend to ride bikes on weekdays, and the most popular days are Thursday (#1) and Wednesday (#2). Unlike casual riders, annual members not only ride bikes along with the Illinois Coast of Lake Michigan but also in the downtown area. For commuting purposes, the classic bike (31%) is the most popular bike for annual members, followed by an electric bike (21%). 
 + Based on the analysis in terms of the top 5 popular locations to use Cyclistic, about 10% of total Cyclistic users ride bikes in the listed stations. It shows that the mobility of Cyclistic is one of the factors in attracting Cyclistic users.
 
 ## Recommendations
 
-The frequency of using Cyclistic is key to defining whether a user wants to become an annual member of Cyclistic. Even though annual members have a shorter ride length than casual members, they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%). Therefore, the marketing team should design a marketing strategy to attract casual riders to use Cyclistic on weekdays.   
+The frequency of using Cyclistic is key to defining whether a user wants to become an annual member of Cyclistic. Even though annual members have a shorter ride length than casual members, they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%). Therefore, the marketing team should focus on attracting casual riders to use Cyclistic on weekdays.   
 
 ## Future Exploration 
 + It would be great to trend data in the future to see the monthly changes or yearly changes. For example, casual riders might be increased during the tourist season.
