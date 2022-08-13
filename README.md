@@ -1,5 +1,5 @@
 # Portfolio: Cyclistic Bike-Share Case Study
-This is the final project for the Google Data Analytics Certificate. To view the dashboard, please see here: https://public.tableau.com/app/profile/jean.hwang/viz/CyclisticBike-ShareCaseSnapshot/Cyclistic
+This is the final project for the Google Data Analytics Certificate. To view the Tableau dashboard, please see [Cyclistic Bike-Share Snapshot](https://public.tableau.com/app/profile/jean.hwang/viz/CyclisticBike-ShareCaseSnapshot/Cyclistic)
 
 ## Background
 
@@ -40,9 +40,17 @@ Tabular data includes:
 + end_lng: Longitude of the end station.
 + member_casual: The type of users, either annual members or casual riders. 
 
-## Data Cleaning and Data Manipulation
+## Data Cleaning, Data Manipulation, and Data Exploration
 
-This dataset is already very well formatted. There is no duplicate data or irrelevant data. However, there were12 data that start_at was longer than end_at, which should be the opposite. Therefore, I flipped those data and updated the table so that start_at can be shorter than end_at to calculate the correct ride length. Also, 54 users have the same started_at and ended_at, and it might be a red flag. I still keep them in the dataset because it is a small number of users (compared to the 769,204 users).  
+This dataset is already very well formatted, and I used SQL to clean the dataset. There is no duplicate data or irrelevant data. However, there were12 data that start_at was longer than end_at, which should be the opposite. Therefore, I flipped those data and updated the table so that start_at can be shorter than end_at to calculate the correct ride length. Also, 54 users have the same started_at and ended_at, and it might be a red flag. I still keep them in the dataset because it is a small number of users (compared to the 769,204 users).  
+
+For more details, please see [the data cleaning, data manipulation, and data exploration file](https://github.com/jeancwhwang/Portfolio_Cyclistic/blob/main/cyclistic_data_exploration.sql)　
+
+## Data Analysis
+
+I used SQL to conduct descriptive analysis to understand the counts and percentages of the user type, rideable type, popular days to use Cyclistic, and the top 5 start and end locations. To do that, I created two views to run some calculations.  One view was to understand the ride length, such as the average ride length, and day of the week. Another view was to get a better sense of the locations, such as the top 5 start and end stations.   
+
+For more details, please see [the data analysis file](https://github.com/jeancwhwang/Portfolio_Cyclistic/blob/main/cyclistic_data_analysis_member_casual.sql)　
 
 ## Findings
 
