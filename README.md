@@ -53,7 +53,7 @@ This dataset is already very well formatted. There is no duplicate data or irrel
 + Casual riders love using Cyclistic on weekends, but not for annual members (Sunday: 18% vs.12%, Saturday: 18% vs. 12%). 
 + Annual members do not heavily use Cyclistic on weekends. Instead, Thursday (18%) and Wednesday (17%) are popular days for them.        
 + The top 5 start and end locations for causal riders are around the Illinois Coast of Lake Michigan. The top 1 start and end locations for casual riders are Streeter Dr & Grand Ave. 
-+ Compared to casual riders, annual members tend to use Cyclistic in the downtown area. The top 1 start and end location for them is DuSable Lake Shore Dr & North Blvd station. 
++ Compared to casual riders, annual members tend to use Cyclistic in the downtown area. The top 1 start and end locations for them are DuSable Lake Shore Dr & North Blvd station. 
 
 ## Summary 
 
