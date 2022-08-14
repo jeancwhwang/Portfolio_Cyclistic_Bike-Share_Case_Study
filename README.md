@@ -58,6 +58,13 @@ I used SQL to conduct descriptive analysis to understand the counts and percenta
 
 For more details, please see [the data analysis file](https://github.com/jeancwhwang/Portfolio_Cyclistic/blob/main/cyclistic_data_analysis_member_casual.sql)　
 
+### Chi-Squared Goodness-of-Fit Test
+Also, I used Python/Jupyter to run the Chi-Squared goodness-of-fit test to evaluate whether a categorical variable is likely to come from a specified distribution or not. In this dataset, day to use Cyclistic, time to use Cyclistic, and the rideable type are categorical variable. Therefore, I run a Chi-Squared goodness-of-fit test to these categorical variables by different rider types (either casual or member) at a 5% percent significant level. 
+
+The null hypothesis for these categorical variables is that a categorical variable fits a uniform distribution (equal frequencies), and the alternative hypothesis for these categorical variables is that a categorical variable does not fit a uniform distribution (unequal frequencies.). After analyzing the data, all results show that the variation is significant to reject the null hypothesis, which means the differences across the counts are meaningful. For example, for casual riders, the count of Sunday is 65,851 and the count of Monday is 37,005. Based on the Chi-Square Test, casual riders ride Cyclistic bikes more on Sunday than Monday. 
+
+For more details, please see [the Chi-Squared test file](https://github.com/jeancwhwang/Portfolio_Cyclistic/blob/main/Cyclistic_ChiSquare.ipynb)
+
 ## Findings
 
 + In June 2022, 47% of Cyclistic users are casual riders and 52% of users are annual members. 
