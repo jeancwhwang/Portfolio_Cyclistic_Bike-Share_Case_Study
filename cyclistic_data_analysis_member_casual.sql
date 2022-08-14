@@ -148,3 +148,73 @@ SELECT	started_at_dow,
 FROM ride_length
 GROUP BY 1,2; 
 
+/*Create view at day level*/
+
+CREATE VIEW Day
+AS
+SELECT
+		ride_id,
+		rideable_type,
+		started_at,
+		start_lat,
+		start_lng,
+		member_casual,
+		substr(started_at,1,4) as start_year,
+		substr(started_at,6,2) as start_month,
+	    substr(started_at,9,2) as start_day,
+		substr(started_at,12,2) as start_hour,
+	    substr(Started_at,15,2) as start_minute,
+        substr(started_at,18,2) as start_second,
+	    case when strftime('%w', started_at) = '0' then '7' else strftime('%w', started_at) end as started_at_dow,
+	    substr('SunMonTueWedThuFriSat', 1 + 3*strftime('%w', started_at), 3) as started_dow_text
+FROM cyclistic;
+
+/* Get counts by hours for both groups */
+
+SELECT
+		member_casual,
+		start_hour,
+		count(*)
+FROM Day
+GROUP BY 1,2
+ORDER BY 2;
+
+/* To cxplore at hour/time level*/
+CREATE VIEW Day
+AS
+SELECT
+		ride_id,
+		rideable_type,
+		started_at,
+		start_lat,
+		start_lng,
+		member_casual,
+		substr(started_at,1,4) as start_year,
+		substr(started_at,6,2) as start_month,
+	    substr(started_at,9,2) as start_day,
+		substr(started_at,12,2) as start_hour,
+	    substr(Started_at,15,2) as start_minute,
+        substr(started_at,18,2) as start_second,
+	    case when strftime('%w', started_at) = '0' then '7' else strftime('%w', started_at) end as started_at_dow,
+	    substr('SunMonTueWedThuFriSat', 1 + 3*strftime('%w', started_at), 3) as started_dow_text
+FROM cyclistic;
+
+/* Popular Times - Casual*/
+SELECT
+		member_casual,
+		start_hour,
+		count(*)
+FROM Day 
+WHERE member_casual = 'casual'
+GROUP BY 1,2
+ORDER BY 2;
+
+/* Popular Times - Member*/
+SELECT
+		member_casual,
+		start_hour,
+		count(*)
+FROM Day
+WHERE member_casual = 'member'
+GROUP BY 1,2
+ORDER BY 2;
