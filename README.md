@@ -7,7 +7,7 @@ To view the Tableau dashboard, please see [Cyclistic Bike-Share Snapshot](https:
 + The results show that casual riders use Cyclistic for leisure purposes whereas annual members are for commuting purposes. Casual riders tend to use Cyclistic on weekends and ride bikes along with the Illinois Coast of Lake Michigan. However, annual members tend to use Cyclistic on weekdays and ride bikes across downtown Chicago. 
 + Even though annual members have a shorter ride length (14 min) than casual members (32 min), they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%). Also, for both groups, rush hour is between 4 am – 6 am, and the most popular time is 5 pm. However, annual members ride bikes more frequently than casual riders. 
 + Therefore, the marketing team should design marketing strategies to promote casual riders using Cyclistic during rush hour 4 pm – 6 pm on weekdays to increase their motivation to ride bikes on weekdays. 
-+ Furthermore, Cyclistic should prepare enough bikes at the most popular start and end locations on weekends in the afternoon and evening to attract more people to become casual users. Cyclistic should make riding bikes easy for them to get on the bikes they are to increase revenue. It might be a way to make them get into the habit of cycling. 
++ Furthermore, Cyclistic should prepare enough bikes at the most popular start and end locations on weekends in the afternoon and evening to attract more people to become casual users. Cyclistic should make riding bikes easy for them to get on the bikes in order to increase revenue. It might be a way to make them get into the habit of cycling. 
 
 
 ## Background
