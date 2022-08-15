@@ -4,9 +4,9 @@ To view the Tableau dashboard, please see [Cyclistic Bike-Share Snapshot](https:
 ## Key Takeaways
 
 + A bike-share company Cyclistic wants to understand how annual members, who purchase annual membership, and casual riders, who purchase single-ride or full-day passes, use Cyclistic bikes differently so that the marketing team can design marketing strategies to convert casual riders into annual members.
-+ The results show that casual riders use Cyclistic for leisure purposes whereas annual members are for commuting purposes. Casual riders tend to use Cyclistic on weekends and ride bikes along with the Illinois Coast of Lake Michigan. However, annual members tend to use Cyclistic on weekdays and ride bikes across downtown Chicago. 
-+ Even though annual members have a shorter ride length (14 min) than casual members (32 min), they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%). Also, for both groups, rush hour is between 4 am – 6 am, and the most popular time is 5 pm. However, annual members ride bikes more frequently than casual riders. 
-+ Therefore, the marketing team should design marketing strategies to promote casual riders using Cyclistic during rush hour 4 pm – 6 pm on weekdays to increase their motivation to ride bikes on weekdays. 
++ The results show that casual riders use Cyclistic for leisure purposes whereas annual members are for commuting purposes. Casual riders tend to ride along the Illinois Coast of Lake Michigan on weekend. However, annual members tend to use Cyclistic on weekdays and ride bikes across downtown Chicago. 
++ Even though annual members have a shorter ride length (14 min) than casual members (32 min), they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%). Also, for both groups, rush hour is between 4 am – 6 am, and the most popular time is 5 pm. 
++ Therefore, the marketing team should design marketing strategies to promote Cyclistic to casual riders during rush hour 4 pm – 6 pm on weekdays to increase their motivation to ride bikes on weekdays.  
 + Furthermore, Cyclistic should prepare enough bikes at the most popular start and end locations on weekends in the afternoon and evening to attract more people to become casual users. Cyclistic should make riding bikes easy for them to get on the bikes in order to increase revenue. It might be a way to make them get into the habit of cycling. 
 
 
@@ -27,9 +27,9 @@ There are three questions to achieve the goal.
 ## About Dataset 
 
 ### Context 
-The dataset contains the historical Cyclistic's historical trip data from June 1, 2022 to June 30, 2022. 
+The dataset contains [the historical Cyclistic's historical trip data](https://divvy-tripdata.s3.amazonaws.com/index.html) from June 1, 2022 to June 30, 2022. 
 
-Based on the data-privacy issues, only some public Cyclistic's historical trip data can be used to explore how annual members and casual riders use Cyclistic bikes differently. Therefore, this project only focuses on answering the first question: how do annual members and casual riders use Cyclistic bikes differently?
+Based on the data-privacy issues, only some public Cyclistic's historical trip data can be used to explore how annual members and casual riders use Cyclistic bikes differently. Therefore, this project only focuses on answering the first question: how do annual members and casual riders use Cyclistic bikes differently? Then, providing some recommendations based on the findings.
 
 ### Content  
 It contains 769,204 users across 13 variables.
@@ -51,7 +51,7 @@ Tabular data includes:
 
 ## Data Cleaning, Data Manipulation, and Data Exploration
 
-This dataset is already very well formatted, and I used SQL to clean the dataset. There is no duplicate data or irrelevant data. However, there were12 data that start_at was longer than end_at, which should be the opposite. Therefore, I flipped those data and updated the table so that start_at can be shorter than end_at to calculate the correct ride length. Also, 54 users have the same started_at and ended_at, and it might be a red flag. I still keep them in the dataset because it is a small number of users (compared to the 769,204 users).  
+This dataset is already very well formatted, and I used SQL to clean the dataset. There was no duplicate data or irrelevant data. However, there were12 data that start_at was longer than end_at, which should be the opposite. Therefore, I flipped those data and updated the table so that start_at can be shorter than end_at to calculate the correct ride length. Also, 54 users have the same started_at and ended_at, and it might be a red flag. I still keep them in the dataset because it is a small number of users (compared to the 769,204 users).  
 
 For more details, please see [the data cleaning, data manipulation, and data exploration file](https://github.com/jeancwhwang/Portfolio_Cyclistic/blob/main/cyclistic_data_exploration.sql)　
 
@@ -64,7 +64,7 @@ For more details, please see [the data analysis file](https://github.com/jeancwh
 ### Chi-Squared Goodness-of-Fit Test
 
 Also, I used Python to run the Chi-Squared goodness-of-fit test to evaluate whether a categorical variable is likely to come from a specified distribution or not. In this dataset, the day to use Cyclistic, time to use Cyclistic, and the rideable type are categorical variables. Therefore, I run a Chi-Squared goodness-of-fit test for these categorical variables by different rider types (either casual or member) at a 5% percent significant level. 
-The null hypothesis for these categorical variables is that a categorical variable fits a uniform distribution (equal frequencies), and the alternative hypothesis for these categorical variables is that a categorical variable does not fit a uniform distribution (unequal frequencies.). After analyzing the data, all results show that the variation is significant to reject the null hypothesis, which means the differences across the counts are meaningful. For example, for casual riders, the count for Sunday is 65,851 and the count for Monday is 37,005. Based on the Chi-Square Test, casual riders ride Cyclistic bikes more on Sunday than Monday.
+The null hypothesis for these categorical variables is that a categorical variable fits a uniform distribution (equal frequencies), and the alternative hypothesis is that a categorical variable does not fit a uniform distribution (unequal frequencies.). After analyzing the data, all results show that the variation is significant to reject the null hypothesis, which means the differences across the counts are meaningful. For example, for casual riders, the count for Sunday is 65,851 and the count for Monday is 37,005. Based on the Chi-Square Test, casual riders ride Cyclistic bikes more on Sunday than Monday.
 
 For more details, please see [the Chi-Squared test file](https://github.com/jeancwhwang/Portfolio_Cyclistic/blob/main/Cyclistic_ChiSquare.ipynb)
 
@@ -83,20 +83,21 @@ For more details, please see [the Chi-Squared test file](https://github.com/jean
 ## Summary 
 
 + In general, casual riders and annual members use Cyclistic for different purposes – the former is for leisure purposes and the latter is for commuting purposes. 
-+ Specifically, casual riders tend to love riding bikes on weekends along with the Illinois Coast of Lake Michigan, and the average riding length is 2x more than annual members (32 min vs. 14 min). Even though casual riders are open to any type of bike, the docked bike is the least favorable type for them.  
-+ Compared to casual riders, annual members tend to ride bikes on weekdays, and the most popular days are Thursday (#1) and Wednesday (#2). Unlike casual riders, annual members not only ride bikes along with the Illinois Coast of Lake Michigan but also in the downtown area. For commuting purposes, the classic bike (31%) is the most popular bike for annual members, followed by an electric bike (21%). 
++ •	Specifically, casual riders tend to love riding bikes along the Illinois Coast of Lake Michigan on weekends, and the average riding length is 2x more than annual members (32 min vs. 14 min). Even though casual riders are open to any type of bike, the docked bike is the least favorable type for them.  
++ Compared to casual riders, annual members tend to ride bikes on weekdays, and the most popular days are Thursday (#1) and Wednesday (#2). Unlike casual riders, annual members not only ride bikes along the Illinois Coast of Lake Michigan but also in the downtown area. For commuting purposes, the classic bike (31%) is the most popular bike for annual members, followed by an electric bike (21%). 
 + Rush hour for both groups is between 4 am – 6 am, and the most popular time is 5 pm. Compared to casual users, annual members ride bikes more often between 6 am  –  8 am.
 + The frequency of using Cyclistic is key to defining whether a user wants to become an annual member of Cyclistic. Even though annual members have a shorter ride length than casual members, they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%).
 + Based on the analysis in terms of the top 5 popular locations to use Cyclistic, about 10% of total Cyclistic users ride bikes in the listed stations. It shows that the mobility of Cyclistic is one of the factors in attracting Cyclistic users.
 
 ## Recommendations
 
-Therefore, the marketing team should design marketing strategies to promote casual riders using Cyclistic during rush hour 4 pm – 6 pm on weekdays. It may be a good way to increase casual riders’ intention to ride bikes on weekdays. 
+Therefore, the marketing team should design marketing strategies to promote Cyclistic to casual riders during rush hour 4 pm – 6 pm on weekdays. It may be a good way to increase casual riders’ intention to ride bikes on weekdays. 
 
 Additionally, Cyclistic should prepare enough bikes at the most popular start and end locations on weekends during the afternoon and evening. Even though casual riders might not be converted into annual members, Cyclistic could make riding bikes easy for them to get on the bikes to increase revenue. It might be a way to make them get into the habit of cycling.
 
-
 ## Future Exploration 
 + It would be great to trend data in the future to see the monthly changes or yearly changes. For example, casual riders might be increased during the tourist season.
++ If possible, getting more user personal data, such a gender, age, address, the frequency of Cyclistic bike use, and spending history, would be extremely helpful to tailor marketing strategies.
++ Based on the data-privacy issues, the price for annual membership, single-ride pass, and full-day pass is unknown, which is challenging to create the right pricing strategy. Therefore, It would be great to conduct a thorough market pricing analysis, such as the Van Westendrop analysis, to determine a range of acceptable prices and an optimal price point for casual members.
 
 
