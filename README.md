@@ -47,7 +47,7 @@ Tabular data includes:
 + start_lng: Longitude of the start station. 
 + end_lat: Latitude of the end station. 
 + end_lng: Longitude of the end station.
-+ member_casual: The type of users, either annual members or casual riders. 
++ member_casual: The user types, either annual members or casual riders. 
 
 ## Data Cleaning, Data Manipulation, and Data Exploration
 
