@@ -83,7 +83,7 @@ For more details, please see [the Chi-Squared test file](https://github.com/jean
 ## Summary 
 
 + In general, casual riders and annual members use Cyclistic for different purposes – the former is for leisure purposes and the latter is for commuting purposes. 
-+ •	Specifically, casual riders tend to love riding bikes along the Illinois Coast of Lake Michigan on weekends, and the average riding length is 2x more than annual members (32 min vs. 14 min). Even though casual riders are open to any type of bike, the docked bike is the least favorable type for them.  
++ Specifically, casual riders tend to love riding bikes along the Illinois Coast of Lake Michigan on weekends, and the average riding length is 2x more than annual members (32 min vs. 14 min). Even though casual riders are open to any type of bike, the docked bike is the least favorable type for them.  
 + Compared to casual riders, annual members tend to ride bikes on weekdays, and the most popular days are Thursday (#1) and Wednesday (#2). Unlike casual riders, annual members not only ride bikes along the Illinois Coast of Lake Michigan but also in the downtown area. For commuting purposes, the classic bike (31%) is the most popular bike for annual members, followed by an electric bike (21%). 
 + Rush hour for both groups is between 4 am – 6 am, and the most popular time is 5 pm. Compared to casual users, annual members ride bikes more often between 6 am  –  8 am.
 + The frequency of using Cyclistic is key to defining whether a user wants to become an annual member of Cyclistic. Even though annual members have a shorter ride length than casual members, they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%).
