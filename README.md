@@ -27,7 +27,7 @@ There are three questions to achieve the goal.
 ## About Dataset 
 
 ### Context 
-The dataset contains [the historical Cyclistic's historical trip data](https://divvy-tripdata.s3.amazonaws.com/index.html) from June 1, 2022 to June 30, 2022. 
+The dataset contains [the Cyclistic's historical trip data](https://divvy-tripdata.s3.amazonaws.com/index.html) from June 1, 2022 to June 30, 2022. 
 
 Based on the data-privacy issues, only some public Cyclistic's historical trip data can be used to explore how annual members and casual riders use Cyclistic bikes differently. Therefore, this project only focuses on answering the first question: how do annual members and casual riders use Cyclistic bikes differently? Then, providing some recommendations based on the findings.
 
