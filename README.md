@@ -51,7 +51,7 @@ Tabular data includes:
 
 ## Data Cleaning, Data Manipulation, and Data Exploration
 
-This dataset is already very well formatted, and I used SQL to clean the dataset. There was no duplicate data or irrelevant data. However, there were12 data that start_at was longer than end_at, which should be the opposite. Therefore, I flipped those data and updated the table so that start_at can be shorter than end_at to calculate the correct ride length. Also, 54 users have the same started_at and ended_at, and it might be a red flag. I still keep them in the dataset because it is a small number of users (compared to the 769,204 users).  
+This dataset was already very well formatted, and I used SQL to clean the dataset. There was no duplicate data or irrelevant data. However, there were 12 data that start_at was longer than end_at, which should be the opposite. Therefore, I flipped those data and updated the table so that start_at can be shorter than end_at to calculate the correct ride length. Also, 54 users have the same started_at and ended_at, and it might be a red flag. I still keep them in the dataset because it is a small number of users (compared to the 769,204 users).  
 
 For more details, please see [the data cleaning, data manipulation, and data exploration file](https://github.com/jeancwhwang/Portfolio_Cyclistic/blob/main/cyclistic_data_exploration.sql)　
 
@@ -64,6 +64,7 @@ For more details, please see [the data analysis file](https://github.com/jeancwh
 ### Chi-Squared Goodness-of-Fit Test
 
 Also, I used Python to run the Chi-Squared goodness-of-fit test to evaluate whether a categorical variable is likely to come from a specified distribution or not. In this dataset, the day to use Cyclistic, time to use Cyclistic, and the rideable type are categorical variables. Therefore, I run a Chi-Squared goodness-of-fit test for these categorical variables by different rider types (either casual or member) at a 5% percent significant level. 
+
 The null hypothesis for these categorical variables is that a categorical variable fits a uniform distribution (equal frequencies), and the alternative hypothesis is that a categorical variable does not fit a uniform distribution (unequal frequencies.). After analyzing the data, all results show that the variation is significant to reject the null hypothesis, which means the differences across the counts are meaningful. For example, for casual riders, the count for Sunday is 65,851 and the count for Monday is 37,005. Based on the Chi-Square test, casual riders ride Cyclistic bikes more often on Sunday than Monday.
 
 For more details, please see [the Chi-Squared test file](https://github.com/jeancwhwang/Portfolio_Cyclistic/blob/main/Cyclistic_ChiSquare.ipynb)
