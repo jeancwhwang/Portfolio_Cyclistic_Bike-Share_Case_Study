@@ -7,7 +7,7 @@ To view the Tableau dashboard, please see [Cyclistic Bike-Share Snapshot](https:
 + The results show that casual riders use Cyclistic for leisure purposes whereas annual members are for commuting purposes. Casual riders tend to ride along the Illinois Coast of Lake Michigan on weekends. However, annual members tend to use Cyclistic on weekdays and ride bikes across downtown Chicago. 
 + Even though annual members have a shorter ride length (14 min) than casual members (32 min), they ride bikes more frequently from Monday to Thursday (61%) than casual members (50%). Also, for both groups, rush hour is between 4 am – 6 am, and the most popular time is 5 pm. 
 + Therefore, the marketing team should design marketing strategies to promote Cyclistic to casual riders during rush hour 4 pm – 6 pm on weekdays to increase their motivation to ride bikes on weekdays.  
-+ Furthermore, Cyclistic should prepare enough bikes at the most popular start and end locations on weekends in the afternoon and evening to attract more people to become casual users. Cyclistic should make riding bikes easy for them to get on the bikes in order to increase revenue. It might be a way to make them get into the habit of cycling. 
++ Furthermore, Cyclistic should prepare enough bikes at the most popular start and end locations on weekend afternoons and evenings to attract more people to become casual users. Cyclistic should make riding bikes easy for them to get on the bikes in order to increase revenue. It might be a way to make them get into the habit of cycling. 
 
 
 ## Background
@@ -94,7 +94,7 @@ For more details, please see [the Chi-Squared test file](https://github.com/jean
 
 Therefore, the marketing team should design marketing strategies to promote Cyclistic to casual riders during rush hour 4 pm – 6 pm on weekdays. It may be a good way to increase casual riders’ intention to ride bikes on weekdays. 
 
-Additionally, Cyclistic should prepare enough bikes at the most popular start and end locations on weekends during the afternoon and evening. Even though casual riders might not be converted into annual members, Cyclistic could make riding bikes easy for them to get on the bikes to increase revenue. It might be a way to make them get into the habit of cycling.
+Additionally, Cyclistic should prepare enough bikes at the most popular start and end locations on weekend afternoons and evenings. Even though casual riders might not be converted into annual members, Cyclistic could make riding bikes easy for them to get on the bikes to increase revenue. It might be a way to make them get into the habit of cycling.
 
 ## Future Exploration 
 + It would be great to trend data in the future to see the monthly changes or yearly changes. For example, casual riders might be increased during the tourist season.
